@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
+
 namespace ControlInventario.Models
 {
     // Para agregar datos de perfil del usuario, agregue más propiedades a su clase ApplicationUser. Visite https://go.microsoft.com/fwlink/?LinkID=317594 para obtener más información.
@@ -26,8 +27,12 @@ namespace ControlInventario.Models
         }
 
         public static ApplicationDbContext Create()
-        {
+        {   
             return new ApplicationDbContext();
         }
+
+        public  DbSet<Supplier> Suppliers { get; set; }
+        public  DbSet<Products> Products { get; set; }
+
     }
 }
