@@ -58,6 +58,6 @@
 
 
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    <a href="@Url.Action("Index", "Suppliers")" class="btn btn-danger btn-circle"> <i class="fas fa-long-arrow-alt-left"></i></a>
+    <a href="@Url.Action("Edit", "Suppliers", new { id = Model.Id })" class="btn btn-warning btn-circle"> <i class="fas fa-edit"></i></a>
 </p>

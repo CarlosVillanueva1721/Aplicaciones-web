@@ -65,7 +65,8 @@
 
                         <div class="form-group">
                             <div class="col-md-offset-2 col-md-10">
-                                <input type="submit" value="Create" class="btn btn-default" />
+                                <a href="@Url.Action("Index","Products")" class="btn btn-danger btn-circle"> <i class="fas fa-long-arrow-alt-left"></i></a>
+                                <input type="submit" value="Create" class="btn btn-success btn-circle fas fa-check" />
                             </div>
                         </div>
                     </div>
@@ -73,15 +74,6 @@
             </div>
         </div>
     </div>
-
-
-
-       
-
-
-            <div>
-                @Html.ActionLink("Back to List", "Index")
-            </div>
 
             @section Scripts {
                 @Scripts.Render("~/bundles/jqueryval")
